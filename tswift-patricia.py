@@ -1,4 +1,5 @@
 import string
+import pickle
 
 class nodoPatricia:
     def __init__(self, casa, chave):
@@ -24,7 +25,7 @@ class folhaPatricia:
         chave =  titulo.translate(str.maketrans('', '', string.punctuation))
 
         # Torna minúsculo
-        chave = str.lower(chave)+'-' # Traço adicionado para caso de um título ser prefixo de outro
+        chave = f"{str.lower(chave)}-" # Traço adicionado para caso de um título ser prefixo de outro
         return chave
 
 class PATRICIA:
@@ -34,7 +35,7 @@ class PATRICIA:
 
     def inserePrimeiraFolha(self, folha):
         c = folha.chave[0]
-        nodo = nodoPatricia(len(folha.chave)-1, folha.chave[:len(folha.chave)-1])
+        nodo = nodoPatricia(len(folha.chave)-1, folha.chave[:-1])
         self.filhos_raiz.append([c, nodo])
         nodo.insereFolha(folha)
         
@@ -56,8 +57,7 @@ class PATRICIA:
                     filho[0] = self.tentaInserirFolha(filho[0], folha)
             
             # Senão, adiciona filho que será pai da folha
-            else:
-                filho = nodoPatricia(len(folha.chave)-1, folha.chave[:len(folha.chave)-1])
+                filho = nodoPatricia(len(folha.chave)-1, folha.chave[:-1])
                 filho = self.tentaInserirFolha(filho, folha)
                 nodo.filhos.append([folha.chave[nodo.casa], filho])                
         
@@ -106,7 +106,7 @@ class PATRICIA:
 
 def salvaArvore(arvore, diretorio):
     with open(diretorio, 'wb') as arq:
-        pickle.dump(pat,arq)
+        pickle.dump(arvore,arq)
 
 def abreArvore(diretorio):
     with open(diretorio, 'rb') as arq:
