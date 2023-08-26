@@ -12,11 +12,14 @@ class nodoPatricia:
 
 class folhaPatricia:
     def __init__(self, titulo, indice):
+        # No futuro, eliminar elemento titulo
         self.titulo = titulo
         self.chave = self.criaChave(titulo)
         self.indice = indice
 
     def criaChave(self, titulo):
+        # No futuro, tratar from the vault e taylors version
+
         # Remove pontuação
         chave =  titulo.translate(str.maketrans('', '', string.punctuation))
 
@@ -57,7 +60,7 @@ class PATRICIA:
                 filho = nodoPatricia(len(folha.chave)-1, folha.chave[:len(folha.chave)-1])
                 filho = self.tentaInserirFolha(filho, folha)
                 nodo.filhos.append([folha.chave[nodo.casa], filho])                
-         
+        
             return nodo
 
 
@@ -100,4 +103,11 @@ class PATRICIA:
         # Senão, cria este nodo 
         self.inserePrimeiraFolha(folha)
         self.sortRaiz()
-    
+
+def salvaArvore(arvore, diretorio):
+    with open(diretorio, 'wb') as arq:
+        pickle.dump(pat,arq)
+
+def abreArvore(diretorio):
+    with open(diretorio, 'rb') as arq:
+        return pickle.load(arq)
