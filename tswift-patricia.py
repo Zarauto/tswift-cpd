@@ -55,11 +55,12 @@ class PATRICIA:
                 if filho[0] == folha.chave[nodo.casa]:
                     # Se será, então segue a linha de descendência
                     filho[0] = self.tentaInserirFolha(filho[0], folha)
+                    return nodo
             
             # Senão, adiciona filho que será pai da folha
-                filho = nodoPatricia(len(folha.chave)-1, folha.chave[:-1])
-                filho = self.tentaInserirFolha(filho, folha)
-                nodo.filhos.append([folha.chave[nodo.casa], filho])                
+            filho = nodoPatricia(len(folha.chave)-1, folha.chave[:-1])
+            filho = self.tentaInserirFolha(filho, folha)
+            nodo.filhos.append([folha.chave[nodo.casa], filho])                
         
             return nodo
 
