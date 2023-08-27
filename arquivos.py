@@ -54,8 +54,10 @@ def getViewsFromYT(url):
 
 def getViews(df):
     for index, row in df.iterrows():
+        #print(row['name'])
         url = row['url']
-        df.at[index, 'views'] = getViewsFromYT(url)
+        if url is not None:
+            df.at[index, 'views'] = getViewsFromYT(url)
 
 def getLinksAux(df, path):
     with open(path, 'r') as t:
