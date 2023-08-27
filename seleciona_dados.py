@@ -6,6 +6,7 @@ from os.path import join
 root = join('.','')
 src_name = join(root,'taylor_swift_spotify.csv')
 tgt_name = join(root,'dados.csv')
+dir_letras = join(root,'letras')
 
 print(src_name)
 
