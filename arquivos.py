@@ -11,6 +11,7 @@ tgt_name = join(root,'dados.bin')
 dir_letras = join(root,'letras')
 dir_links = join(root,'urls')
 letras_bin = join(root,'letras.bin')
+lista_albums = join(root,'albuns.bin')
 
 API_KEY = 'AIzaSyCpvKDb0XAjR2Jgq-7FsOo36UNfEUqpFM8'
 
@@ -50,7 +51,7 @@ def getViewsFromYT(url):
     youtube = build('youtube', 'v3', developerKey=API_KEY)
     request = youtube.videos().list(part='statistics', id=video_id)
     response = request.execute()
-    return response['items'][0]['statistics']['viewCount']
+    return int(response['items'][0]['statistics']['viewCount'])
 
 def getViews(df):
     for index, row in df.iterrows():
@@ -93,6 +94,15 @@ def inicializaFromKaggle():
     df.loc[df['album'] == "Red (Deluxe Edition)", 'album'] = "Red"
     df.loc[df['album'] == "Speak Now (Deluxe Package)", 'album'] = "Speak Now"
     df.loc[df['album'] == "Fearless (Platinum Edition)", 'album'] = "Fearless"
+    
+    # Cria um arquivo armazenando os títulos dos álbums e suas datas de lançamento
+    # para eliminar esta informação repetida do arquivo principal
+    df_albums = df[['album', 'release_date']].drop_duplicates()
+    with open(lista_albums, 'wb') as la:
+        pickle.dump(df_albums, la)
+        
+    df = df.drop('release_date', axis=1)
+    
 
     # Atribui ID a cada música
     df['id'] = list(range(1,len(df)+1))
@@ -101,5 +111,18 @@ def inicializaFromKaggle():
     getViews(df)
     getLyrics(df)
 
+    #Salva arquivo
     with open(tgt_name, 'wb') as arq:
         pickle.dump(df, arq)
+        
+# Retorna dataframe com os dados do arquivo principal para leitura
+def abreLeitura():
+    with open(tgt_name, 'rb') as f:
+        return pickle.load(f)
+    
+    
+# Retorna letra de uma música
+def getLetra(ini, length):
+    with open(letras_bin, 'rb') as f:
+        f.seek(ini)
+        return f.read(length).decode('utf-8')

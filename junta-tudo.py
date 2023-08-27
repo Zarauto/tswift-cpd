@@ -1,16 +1,21 @@
 import patricia as pat
 import arquivos as arq
 import pickle
+import operacoes as op
+import datasci as ds
 
 #arq.inicializaFromKaggle()
 
-dados = arq.tgt_name
 busca = arq.join(arq.root,'patricia.bin')
 
-with open (dados, 'rb') as src:
-    df = pickle.load(src)
+df = arq.abreLeitura()
     
 arv = pat.criaArvoreFromDF(df)
     
-print([x[0] for x in arv.filhos_raiz])
-pat.salvaArvore(arv, busca)
+"""x = arv.buscaPorString('deli')[0][1].indice
+op.exibeInfoMusica(x)"""
+
+ds.graficoBarrasAlbum('reputation')
+
+#x = [y[1].titulo for y in arv.buscaPorString('the')]
+#print(x)

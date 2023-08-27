@@ -6,9 +6,39 @@ class nodoPatricia:
         self.chave = chave # Letras em comum das chaves até a posição 'casa'
         self.folhas = []
         self.filhos = []
+        
+    def sortFilhos(self):
+        for i in range(1,len(self.filhos)):
+            if self.filhos[i][0] > self.filhos[i-1][0]:
+                continue
+
+            j = i
+            while(self.filhos[j-1][0] > self.filhos[i][0]):
+                j -= 1
+
+            x = self.filhos[i]
+            self.filhos.pop(i)
+            self.filhos.insert(j,x)
+        
 
     def insereFolha(self, folha):
         self.folhas.append((folha.chave[self.casa], folha))
+        
+    def retornaFolhas(self, entrada):  # sourcery skip: de-morgan
+        # Se a entrada não compartilhar o prefixo do nodo
+        #print(self.chave, entrada)
+        if not (self.chave == entrada[:self.casa] or entrada == self.chave[:len(entrada)]):
+            return []
+        
+        results = []
+        if len(self.folhas) > 0:
+            #print(self.folhas)
+            results.extend(self.folhas)
+            
+        for f in self.filhos:
+            results.extend(f[1].retornaFolhas(entrada))
+            
+        return results
 
 class folhaPatricia:
     def __init__(self, titulo, indice):
@@ -53,12 +83,14 @@ class PATRICIA:
                 if filho[0] == folha.chave[nodo.casa]:
                     # Se será, então segue a linha de descendência
                     filho[1] = self.tentaInserirFolha(filho[1], folha)
+                    nodo.sortFilhos()
                     return nodo
             
             # Senão, adiciona filho que será pai da folha
             filho = nodoPatricia(len(folha.chave)-1, folha.chave[:-1])
             filho = self.tentaInserirFolha(filho, folha)
-            nodo.filhos.append([folha.chave[nodo.casa], filho])                
+            nodo.filhos.append([folha.chave[nodo.casa], filho])     
+            nodo.sortFilhos()           
         
             return nodo
 
@@ -101,11 +133,24 @@ class PATRICIA:
 
         # Senão, cria este nodo 
         self.inserePrimeiraFolha(folha)
-        self.sortRaiz()
+        self.sortRaiz()       
+        
+        
+    def buscaPorString(self, entrada):
+        entrada = entrada.lower()
+        entrada = ''.join(c for c in entrada if c.isalpha() or c.isspace() or c.isdigit())
+        prim_char = entrada[0]
+        
+        for f in self.filhos_raiz:
+            if prim_char == f[0]:
+                results = f[1].retornaFolhas(entrada)
+                break
+            
+        return results
 
-def salvaArvore(arvore, diretorio):
+def salvaArvore(arv, diretorio):
     with open(diretorio, 'wb') as arq:
-        pickle.dump(arvore,arq)
+        pickle.dump(arv, arq)
         
 def abreArvore(diretorio):
     with open(diretorio, 'rb') as arq:
