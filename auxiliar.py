@@ -26,8 +26,8 @@ for name in albuns:
     tgt = o.join(letras,name+'.txt')
     shutil.copy(src,tgt)  """              
     
-for name in albuns_com_tv:
+"""for name in albuns_com_tv:
     src_name = name[:-n]
     src = o.join(links,src_name+'.txt')
     tgt = o.join(links,name+'.txt')
-    shutil.copy(src,tgt)            
+    shutil.copy(src,tgt)            """

@@ -1,4 +1,3 @@
-import string
 import pickle
 
 class nodoPatricia:
@@ -22,11 +21,10 @@ class folhaPatricia:
         # No futuro, tratar from the vault e taylors version
 
         # Remove pontuação
-        chave =  titulo.translate(str.maketrans('', '', string.punctuation))
+        chave = ''.join(c for c in titulo if c.isalpha() or c.isspace() or c.isdigit())
 
         # Torna minúsculo
-        chave = f"{str.lower(chave)}-" # Traço adicionado para caso de um título ser prefixo de outro
-        return chave
+        return f"{str.lower(chave)}-" # Traço adicionado para caso de um título ser prefixo de outro
 
 class PATRICIA:
     def __init__(self):
@@ -40,7 +38,7 @@ class PATRICIA:
         nodo.insereFolha(folha)
         
 
-    def tentaInserirFolha(self, nodo, folha):
+    def tentaInserirFolha(self, nodo, folha):  # sourcery skip: extract-method
 
         # Se compartilhar o prefixo armazenado pelo nodo
         if nodo.chave == folha.chave[:nodo.casa]:
@@ -54,7 +52,7 @@ class PATRICIA:
             for filho in nodo.filhos:
                 if filho[0] == folha.chave[nodo.casa]:
                     # Se será, então segue a linha de descendência
-                    filho[0] = self.tentaInserirFolha(filho[0], folha)
+                    filho[1] = self.tentaInserirFolha(filho[1], folha)
                     return nodo
             
             # Senão, adiciona filho que será pai da folha
@@ -108,7 +106,18 @@ class PATRICIA:
 def salvaArvore(arvore, diretorio):
     with open(diretorio, 'wb') as arq:
         pickle.dump(arvore,arq)
-
+        
 def abreArvore(diretorio):
     with open(diretorio, 'rb') as arq:
         return pickle.load(arq)
+    
+def criaArvoreFromDF(df):
+    arv = PATRICIA()
+
+    for i, row in df.iterrows():
+        indice = row['id']
+        titulo = row['name']
+        folha = folhaPatricia(titulo, indice)
+        arv.insereFolha(folha)
+        
+    return arv
