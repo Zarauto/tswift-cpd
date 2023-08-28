@@ -6,7 +6,7 @@ import datasci as ds
 import pandas as pd
 import hash
 
-#arq.inicializaFromKaggle()
+arq.inicializaFromKaggle()
 
 busca = arq.join(arq.root,'patricia.bin')
 
@@ -45,7 +45,7 @@ print([[j.palavra, j.freq] for j in h.to_list()])"""
 """h = hash.Hash(307)
 
 arq.salvaHash(h)
-"""
+
 
 g, k = 1089633, 2031
 i, j = 1093426, 2088
@@ -53,7 +53,7 @@ arq.adicionaFrequenciaPalavras(g, k)
 arq.adicionaFrequenciaPalavras(i, j)
 
 h = arq.abreHash()
-h.print()
+h.print()"""
 
 """x = arv.buscaPorString('read')[0][1].indice
 op.exibeInfoMusica(x)"""

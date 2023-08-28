@@ -32,6 +32,8 @@ def getLyricsAux(df, path):
         
         for i in range(len(nomes)):
             letra_bin = letras[i].encode()
+
+            print(nomes[i])
             
             ini = bf.tell()
             bf.write(letra_bin)
@@ -76,6 +78,7 @@ def getLinksTematica(df):
     albuns = set(df['album'].tolist())
     
     for a in albuns:
+        #print(a)
         getLinksAux(df, join(dir_links,f'{a}.txt'))
 
 def inicializaFromKaggle():
@@ -122,7 +125,8 @@ def inicializaFromKaggle():
     df = df.drop('release_date', axis=1)
     
 
-    open(freq_palavras,'rb')
+    open(freq_palavras,'wb')
+
 
     # Atribui ID a cada música
     df['id'] = list(range(1,len(df)+1))
