@@ -77,7 +77,7 @@ def inicializaFromKaggle():
     # Cria dataframe reduzido a partir do arquivo fonte
     df = pd.read_csv(src_name)
 
-    df = df[['id','name','album','release_date','track_number','duration_ms']]
+    df = df[['id','name','album','release_date','track_number']]
 
     for i in ['id','url', 'views', 'tematica', 'letra_ini', 'letra_len']:
         df[i] = None
@@ -94,6 +94,19 @@ def inicializaFromKaggle():
     df.loc[df['album'] == "Red (Deluxe Edition)", 'album'] = "Red"
     df.loc[df['album'] == "Speak Now (Deluxe Package)", 'album'] = "Speak Now"
     df.loc[df['album'] == "Fearless (Platinum Edition)", 'album'] = "Fearless"
+    
+    # Elimina faixas que não serão avaliadas
+    df = df[~df['name'].str.endswith(" - Voice Memo")]
+    df = df[~((df['album'] == "Speak Now") & (df['track_number'] >= 20))]
+    df = df[~df['name'].str.endswith(" - Pop Version")]
+    df = df[~df['name'].str.endswith(" - Original Demo Recording")]
+    
+    # Trata títulos
+    df['name'] = df['name'].str.replace(" - bonus track$", "", regex=True)
+    df['name'] = df['name'].str.replace(" \(From The Vault\)$", "", regex=True)
+    df['name'] = df['name'].str.replace(" - POP Mix$", "", regex=True)
+    df['name'] = df['name'].str.replace(" - Radio Single Remix$", "", regex=True)
+    df['name'] = df['name'].str.replace("Trouble.$", "Trouble", regex=True)
     
     # Cria um arquivo armazenando os títulos dos álbums e suas datas de lançamento
     # para eliminar esta informação repetida do arquivo principal
