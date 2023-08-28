@@ -24,8 +24,8 @@ pd.set_option('display.width', None)
 
 #ds.graficoBarrasAlbum('folklore')
 
-#x = [y[1].titulo for y in arv.buscaPorString('a')]
-#print(x)
+x = [y[1].titulo for y in arv.buscaPorString('a')]
+print(x)
 
 
 
@@ -42,23 +42,25 @@ h.atualiza('man')
 
 print([[j.palavra, j.freq] for j in h.to_list()])"""
 
-h = hash.Hash(307)
+"""h = hash.Hash(307)
 
 arq.salvaHash(h)
+"""
 
-
-g, k = 1089633, 2031
+"""g, k = 1089633, 2031
 i, j = 1093426, 2088
 arq.adicionaFrequenciaPalavras(g, k)
 arq.adicionaFrequenciaPalavras(i, j)
 
 h = arq.abreHash()
-h.print()
+h.print()"""
 """
 x = arv.buscaPorString('read')[0][1].indice
 op.exibeInfoMusica(x)"""
 
-l = h.to_list()
+"""l = h.to_list()
 l.sort()
 
-print([[x.palavra, x.freq] for x in l])
+print([[x.palavra, x.freq] for x in l])"""
+
+ds.graficoBarrasAlbum('reputation')
