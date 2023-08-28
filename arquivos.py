@@ -1,3 +1,4 @@
+import hash
 import pandas as pd
 import pickle
 from os.path import join
@@ -12,6 +13,8 @@ dir_letras = join(root,'letras')
 dir_links = join(root,'urls')
 letras_bin = join(root,'letras.bin')
 lista_albums = join(root,'albuns.bin')
+freq_palavras = join(root,'freq_letras.bin')
+hash_bin = join(root,'hash.bin')
 
 API_KEY = 'AIzaSyCpvKDb0XAjR2Jgq-7FsOo36UNfEUqpFM8'
 
@@ -37,10 +40,12 @@ def getLyricsAux(df, path):
             df.loc[df['name'] == nomes[i], 'letra_ini'] = ini
             df.loc[df['name'] == nomes[i], 'letra_len'] = length
 
+            adicionaFrequenciaPalavras(ini,length)
+
 def getLyrics(df):
-    albuns = set(df['album'].tolist())
+    albums = set(df['album'].tolist())
     
-    for a in albuns:
+    for a in albums:
         getLyricsAux(df, join(dir_letras,f'{a}.txt'))
 
 def getViewsFromYT(url):
@@ -117,6 +122,8 @@ def inicializaFromKaggle():
     df = df.drop('release_date', axis=1)
     
 
+    open(freq_palavras,'rb')
+
     # Atribui ID a cada música
     df['id'] = list(range(1,len(df)+1))
     
@@ -139,3 +146,45 @@ def getLetra(ini, length):
     with open(letras_bin, 'rb') as f:
         f.seek(ini)
         return f.read(length).decode('utf-8')
+    
+
+
+
+
+def removePontuacao(s):
+    chars_a_remover = r'^[^\w\s\']+|[^\'\w\s]+$'
+    s = re.sub(chars_a_remover,'',s)
+
+    if s.startswith("'"):
+        return "'"+s[1:].capitalize()
+    return s.capitalize()
+
+
+def adicionaFrequenciaPalavras(ini, length):
+    letra = getLetra(ini, length)
+    palavras = set(re.split(r'[\s\n]+', letra))
+    palavras = {removePontuacao(p) for p in palavras}
+
+    hash = abreHash()
+
+    for p in palavras:
+        print(p,'-')
+        hash.atualiza(p)
+
+    salvaHash(hash)
+
+def abreHash():
+    with open(hash_bin, 'rb') as h:
+        return pickle.load(h)
+
+def salvaHash(hash):
+    with open(hash_bin, 'wb') as h:
+        pickle.dump(hash, h)
+
+def abreFreq():
+    with open(freq_palavras, 'rb') as h:
+        return pickle.load(h)
+
+def salvaFreq(lista):
+    with open(freq_palavras, 'wb') as h:
+        pickle.dump(lista, h)

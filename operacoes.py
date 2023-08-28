@@ -27,5 +27,6 @@ def exibeInfoMusica(num):
     print(f"Data de lançamento: {data}")
     print(f"Temática: {df['tematica'].to_list()[0]}")
     print(f"Views no YouTube: {df['views'].to_list()[0]}")
-    print(f"\nLetra:\n{arq.getLetra(df['letra_ini'].to_list()[0],df['letra_len'].to_list()[0])}")
+    #print(f"\nLetra:\n{arq.getLetra(df['letra_ini'].to_list()[0],df['letra_len'].to_list()[0])}")
+    print(f"{df['letra_ini'].to_list()[0],df['letra_len'].to_list()[0]}")
     
