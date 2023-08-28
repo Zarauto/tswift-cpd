@@ -19,6 +19,7 @@ hash_bin = join(root,'hash.bin')
 API_KEY = 'AIzaSyCpvKDb0XAjR2Jgq-7FsOo36UNfEUqpFM8'
 
 def getLyricsAux(df, path):
+    print(path)
     with open(path, 'r') as src:
         content = src.read()
         lista = content.split('@')
@@ -151,10 +152,6 @@ def getLetra(ini, length):
         f.seek(ini)
         return f.read(length).decode('utf-8')
     
-
-
-
-
 def removePontuacao(s):
     chars_a_remover = r'^[^\w\s\']+|[^\'\w\s]+$'
     s = re.sub(chars_a_remover,'',s)
