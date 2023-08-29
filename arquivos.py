@@ -19,7 +19,7 @@ hash_bin = join(root,'hash.bin')
 API_KEY = 'AIzaSyCpvKDb0XAjR2Jgq-7FsOo36UNfEUqpFM8'
 
 def getLyricsAux(df, path):
-    print(path)
+    #print(path)
     with open(path, 'r') as src:
         content = src.read()
         lista = content.split('@')
@@ -34,7 +34,7 @@ def getLyricsAux(df, path):
         for i in range(len(nomes)):
             letra_bin = letras[i].encode()
 
-            print(nomes[i])
+            #print(nomes[i])
             
             ini = bf.tell()
             bf.write(letra_bin)
@@ -42,8 +42,10 @@ def getLyricsAux(df, path):
             
             df.loc[df['name'] == nomes[i], 'letra_ini'] = ini
             df.loc[df['name'] == nomes[i], 'letra_len'] = length
+            
+            #print(f'{nomes[i]}: {ini} e {length}')
 
-            adicionaFrequenciaPalavras(ini,length)
+            adicionaFrequenciaPalavras(letra_bin)
 
 def getLyrics(df):
     albums = set(df['album'].tolist())
@@ -126,15 +128,33 @@ def inicializaFromKaggle():
     df = df.drop('release_date', axis=1)
     
 
-    open(freq_palavras,'wb')
+    salvaFreq([])
+    
+    tam_hash = 3967
+    h = hash.Hash(tam_hash)
+    salvaHash(h)
 
 
     # Atribui ID a cada música
     df['id'] = list(range(1,len(df)+1))
     
+    print("Atribuiu IDs")
+    
     getLinksTematica(df)
     getViews(df)
+    
+    print("Pegou views")
     getLyrics(df)
+    
+    print("Pegou letras")
+    
+    h = abreHash()
+    l = h.to_list()
+    l.sort()
+    salvaFreq(l)
+    print("Salvou frequências")
+    
+    #salvaFreq(abreHash().to_list().sort())
 
     #Salva arquivo
     with open(tgt_name, 'wb') as arq:
@@ -152,7 +172,7 @@ def getLetra(ini, length):
         f.seek(ini)
         return f.read(length).decode('utf-8')
     
-def removePontuacao(s):
+def removePontuacao(s):  # sourcery skip: assign-if-exp, reintroduce-else
     chars_a_remover = r'^[^\w\s\']+|[^\'\w\s]+$'
     s = re.sub(chars_a_remover,'',s)
 
@@ -161,26 +181,29 @@ def removePontuacao(s):
     return s.capitalize()
 
 
-def adicionaFrequenciaPalavras(ini, length):
-    letra = getLetra(ini, length)
+def adicionaFrequenciaPalavras(letra_bin):
+    letra = letra_bin.decode()
+    #print(letra)
     palavras = set(re.split(r'[\s\n]+', letra))
-    palavras = {removePontuacao(p) for p in palavras}
+    palavras = set({removePontuacao(p) for p in palavras})
+    
+    #print(palavras)
 
-    hash = abreHash()
+    h = abreHash()
 
     for p in palavras:
-        print(p,'-')
-        hash.atualiza(p)
+        #print(p,'-')
+        h.atualiza(p)
 
-    salvaHash(hash)
+    salvaHash(h)
 
 def abreHash():
     with open(hash_bin, 'rb') as h:
         return pickle.load(h)
 
-def salvaHash(hash):
+def salvaHash(hash1):
     with open(hash_bin, 'wb') as h:
-        pickle.dump(hash, h)
+        pickle.dump(hash1, h)
 
 def abreFreq():
     with open(freq_palavras, 'rb') as h:

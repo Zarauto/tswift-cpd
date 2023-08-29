@@ -1,3 +1,5 @@
+import math
+
 _xormap = {('0','1'):'1', ('1','0'):'1', ('1','1'):'0', ('0','0'):'0'}
 def xor(x, y):
     return ''.join([_xormap[a,b] for a,b in zip(x,y)])
@@ -43,9 +45,11 @@ class Hash():
     def atualiza(self, termo):
         j = 1
         i = self.f1(termo)
+        #print(termo)
 
         while self.used[i] and self.dicionario[i] != termo:
-            i = (self.f1(termo)+j*self.f2(termo) + j)%self.size
+            i = (self.f1(termo)+ j*self.f2(termo) + j)%self.size
+            #print(i)
             j+=1
 
         if not self.used[i]:
@@ -68,6 +72,11 @@ class Hash():
             if not self.used[i]:
                 continue
 
+            #print(i)
             lista.append(Termo(self.dicionario[i],self.conteudo[i]))
 
         return lista
+    
+def printFreq(lista):
+    for t in lista:
+        print(f"{t.palavra} | {t.freq}")

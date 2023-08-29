@@ -6,13 +6,11 @@ import datasci as ds
 import pandas as pd
 import hash
 
-arq.inicializaFromKaggle()
-
-busca = arq.join(arq.root,'patricia.bin')
+#arq.inicializaFromKaggle()
 
 df = arq.abreLeitura()
     
-arv = pat.criaArvoreFromDF(df)
+#arv = pat.criaArvoreFromDF(df)
     
 
 
@@ -20,12 +18,15 @@ pd.set_option('display.max_columns', None)  # Display all columns
 pd.set_option('display.max_rows', None)     # Display all rows
 pd.set_option('display.width', None)
 
+print(df[df['album']=="Red (Taylor's Version)"])
+#arq.abreHash().print()
+
 #print(df[df['album']=="Midnights"])
 
 #ds.graficoBarrasAlbum('folklore')
 
-x = [y[1].titulo for y in arv.buscaPorString('ou')]
-print(x)
+"""x = [y[1].titulo for y in arv.buscaPorString('ou')]
+print(x)"""
 
 
 
@@ -64,3 +65,23 @@ l.sort()
 print([[x.palavra, x.freq] for x in l])"""
 
 #ds.graficoBarrasAlbum('reputation')
+
+#arq.inicializaFromKaggle()
+
+"""h = arq.abreHash()
+h.print()"""
+
+"""l = arq.abreFreq()
+
+for i in range(35):
+    print(l[i].palavra,l[i].freq)
+#hash.printFreq(l)"""
+"""l = h.to_list()
+l.sort()
+
+for x in l:
+    print([[x.palavra, x.freq]])"""
+    
+
+
+#arq.adicionaFrequenciaPalavras(1089633, 2031)
