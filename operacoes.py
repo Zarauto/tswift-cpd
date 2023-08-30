@@ -2,6 +2,7 @@ import patricia as pat
 import arquivos as arq
 import pandas as pd
 import pickle
+import matplotlib.pyplot as plt
 
 def adicionaMusica(titulo, album, duracao, url, tematica, arq_letra):
     pass
@@ -30,3 +31,15 @@ def exibeInfoMusica(num):
     print(f"\nLetra:\n{arq.getLetra(df['letra_ini'].to_list()[0],df['letra_len'].to_list()[0])}")
     print("----------------------------\n")
     
+def graficoBarrasAlbum(album):
+    df = arq.abreLeitura()
+    df = df[df['album'] == album]
+    #df = df[df['name', 'views']]
+    
+    plt.bar(df['name'],df['views'])
+    plt.xlabel('Músicas')
+    plt.ylabel('Views')
+    plt.title(f'Comparação de views no YouTube das músicas do álbum "{album}"')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.show()

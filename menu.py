@@ -143,7 +143,7 @@ def listaPorAlbum():
                 print(f"[{i+1}] {todas[i][1].titulo}")
             
             #print("\n[I] Inverter ordem de exibição")
-            print("[X] Voltar ao menu principal")
+            print("\n[X] Voltar ao menu principal")
             
             entrada = input('\nSeleção: ')
                 
@@ -165,12 +165,153 @@ def listaPorAlbum():
             return
         
         j += 1
+        
+def listaPorTema():
+    temas = ['Romantica','Melancolica','Lembranca','Vingativa','Misc.']
+    
+    for i in range(len(temas)):
+        print(f"[{i+1}] {temas[i]}")
+    entrada = int(input('\nSeleção: '))
+    
+    tema = temas[entrada-1]
+    
+    print('\n')
+    
+    df = arq.abreLeitura()
+    df = df[df['tematica'] == tema]
+    
+    arv = pat.criaArvoreFromDF(df)
+            
+    todas = arv.listaTodas()
+    
+    for i in range(len(todas)):
+        print(f"[{i+1}] {todas[i][1].titulo}")
+    
+    print("\n[X] Voltar ao menu principal")
+    
+    entrada = input('\nSeleção: ')
+    
+    if entrada.lower() == 'x':
+        return
+    i = int(entrada)
+        
+    index = todas[i-1][1].indice
+    op.exibeInfoMusica(index)
+    return
+    
 
 def menuBusca():
-    pass
+    termo = input("\nDigite o termo a ser buscado: ")
+    print()
+
+    arv = arq.abreArvore()
+
+    achou = any(chave[0] == termo[0] for chave in arv.filhos_raiz)
+    
+    if not achou:
+        print("Não houve correspondência ao seu termo de pesquisa.\n")
+        return
+
+    resultados = arv.buscaPorString(termo)
+
+    if len(resultados) == 0:
+        print("Não houve correspondência ao seu termo de pesquisa.\n")
+        return
+    
+    for i in range(len(resultados)):
+        print(f"[{i+1}] {resultados[i][1].titulo}")
+    
+    print("\n[X] Voltar ao menu principal")
+    
+    entrada = input('\nSeleção: ')
+    
+    if entrada.lower() == 'x':
+        return
+    i = int(entrada)
+        
+    index = resultados[i-1][1].indice
+    op.exibeInfoMusica(index)
+    return
+    
+    
 
 def menuEstatisticas():
-    pass
+    print("[1] Comparar visualizações das músicas no YouTube")
+    print("[2] Ver frequência das palavras nas letras das músicas") 
+    print("[0] Voltar ao menu principal\n")
+    
+    entrada = input()
+    
+    if entrada == '0':
+        return
+    
+    if entrada == '1':
+        menuViews()
+        return
+    
+    if entrada == '2':
+        verFrequencia()
+        return
+    
+    print("Opção inválida.\n")
+    menuEstatisticas()
+    return
+
+def menuViews():
+    print()
+    print("[1] Comparar músicas de um mesmo álbum")
+    print("[2] Comparar por temática")
+    print("[3] Mostrar todas as músicas em ordem descrescente")
+    print("[4] Mostrar todas as músicas em ordem crescente")
+    print("[0] Voltar ao menu principal\n")
+    
+    entrada = input('\n')
+    
+    if entrada == '0':
+        return
+    
+    if entrada == '1':
+        viewsAlbum()
+        return
+    
+    if entrada == '2':
+        viewsTema()
+        return
+    
+    if entrada == '3':
+        pass
+        return
+    
+    if entrada == '4':
+        pass
+        return
+    
+    print("Opção inválida.\n")
+    menuViews()
+    return
+
+def viewsAlbum():
+    albums = arq.abreAlbums()
+    
+    j = 1
+    for i, row in albums.iterrows():
+        print(f"[{j}] {row['album']}")
+        j += 1
+        
+    entrada = int(input('\nSeleção: '))
+    
+    j = 1
+    for i, row in albums.iterrows():
+        if j == entrada:
+            a = row['album']
+            df = arq.abreLeitura()
+            df = df[df['album'] == a]
+            break
+            
+        j+=1
+        
+    op.graficoBarrasAlbum(a)
+    
 
 def menuAddMusica():
     pass
