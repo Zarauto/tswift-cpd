@@ -5,6 +5,7 @@ from os.path import join
 from googleapiclient.discovery import build
 import re
 import sys
+import patricia as pat
 
 def limpaLinha():
     sys.stdout.write("\033[F")  # Move cursor up one line
@@ -20,6 +21,7 @@ letras_bin = join(root,'letras.bin')
 lista_albums = join(root,'albuns.bin')
 freq_palavras = join(root,'freq_letras.bin')
 hash_bin = join(root,'hash.bin')
+pat_bin = join(root,'patricia.bin')
 
 API_KEY = 'AIzaSyCpvKDb0XAjR2Jgq-7FsOo36UNfEUqpFM8'
 
@@ -166,6 +168,11 @@ def inicializaFromKaggle():
     salvaFreq(l)
     limpaLinha()
     print("Frequências das palavras processadas!")
+    
+    print("Indexando músicas para busca...")
+    salvaArvore(pat.criaArvoreFromDF(df))
+    limpaLinha()
+    print("Músicas indexadas!")
     print("O programa iniciará em instantes\n")
     
     #salvaFreq(abreHash().to_list().sort())
@@ -226,3 +233,19 @@ def abreFreq():
 def salvaFreq(lista):
     with open(freq_palavras, 'wb') as h:
         pickle.dump(lista, h)
+        
+def salvaArvore(arv):
+    with open(pat_bin, 'wb') as arq:
+        pickle.dump(arv, arq)
+        
+def abreArvore():
+    with open(pat_bin, 'rb') as arq:
+        return pickle.load(arq)
+    
+def abreAlbums():
+    with open(lista_albums, 'rb') as arq:
+        return pickle.load(arq)
+    
+def salvaAlbums(df):
+    with open(lista_albums, 'wb') as arq:
+        pickle.dump(df, lista_albums)

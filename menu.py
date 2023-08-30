@@ -1,4 +1,6 @@
 import arquivos as arq
+import operacoes as op
+import patricia as pat
 from os.path import exists
 
 
@@ -48,7 +50,121 @@ def menuPrincipal():
         menuAddMusica()
         
 def menuListaMusicas():
-    pass
+    print('------------------------')
+    
+    entrada = -1
+    
+    while entrada != '0':
+    
+        print("Selecione uma opção:")
+        print("[1] Listar todas as músicas")
+        print("[2] Listar por álbum")
+        print("[3] Listar por temática")
+        print("[0] Voltar para o menu principal\n")
+        
+        entrada = input()
+        
+        if not '0' <= entrada <= '3':
+            print("Opção inválida. Insira um número entre 0 e 3\n")
+            continue    
+        
+        if entrada == '1':
+            listaTodas()
+            entrada = '0'
+            
+        if entrada == '2':
+            listaPorAlbum()
+            entrada = '0'
+            
+        if entrada == '3':
+            listaPorTema()
+            entrada = '0'
+            
+        if entrada == '0':
+            return
+    
+
+def listaTodas():
+    a = arq.abreArvore()
+    
+    todas = a.listaTodas()
+    
+    entrada = -1
+    
+    while True:
+    
+        for i in range(len(todas)):
+            print(f"[{i+1}] {todas[i][1].titulo}")
+            
+        print("\n[I] Inverter ordem de exibição")
+        print("[X] Voltar ao menu principal")
+        
+        entrada = input('\nSeleção: ')
+            
+        if entrada.lower() != 'i' and entrada.lower() != 'x' and not 0 < int(entrada) <= (len(todas)):
+            print("Opção inválida. Tente novamente.\n")
+            continue
+            
+        if entrada.lower() == 'x':
+            return
+        
+        if entrada.lower() == 'i':
+            todas.reverse()
+            continue
+            
+        i = int(entrada)
+    
+        index = todas[i-1][1].indice
+        op.exibeInfoMusica(index)
+        return
+    
+def listaPorAlbum():
+    albums = arq.abreAlbums()
+    
+    j = 1
+    for i, row in albums.iterrows():
+        print(f"[{j}] {row['album']}")
+        j += 1
+        
+    entrada = int(input('\nSeleção: '))
+    
+    j = 1
+    for i, row in albums.iterrows():
+        if j == entrada:
+            a = row['album']
+            df = arq.abreLeitura()
+            df = df[df['album'] == a]
+            
+            arv = pat.criaArvoreFromDF(df)
+            
+            todas = arv.listaTodas()
+            
+            for i in range(len(todas)):
+                print(f"[{i+1}] {todas[i][1].titulo}")
+            
+            #print("\n[I] Inverter ordem de exibição")
+            print("[X] Voltar ao menu principal")
+            
+            entrada = input('\nSeleção: ')
+                
+            if entrada.lower() != 'i' and entrada.lower() != 'x' and not 0 < int(entrada) <= (len(todas)):
+                print("Opção inválida. Tente novamente.\n")
+                continue
+                
+            if entrada.lower() == 'x':
+                return
+            
+            if entrada.lower() == 'i':
+                todas.reverse()
+                continue
+                
+            i = int(entrada)
+        
+            index = todas[i-1][1].indice
+            op.exibeInfoMusica(index)
+            return
+        
+        j += 1
 
 def menuBusca():
     pass

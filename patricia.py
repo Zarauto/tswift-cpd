@@ -147,14 +147,13 @@ class PATRICIA:
                 break
             
         return results
-
-def salvaArvore(arv, diretorio):
-    with open(diretorio, 'wb') as arq:
-        pickle.dump(arv, arq)
-        
-def abreArvore(diretorio):
-    with open(diretorio, 'rb') as arq:
-        return pickle.load(arq)
+    
+    def listaTodas(self):
+        retorno = []
+        for x in self.filhos_raiz:
+            retorno.extend(self.buscaPorString(x[0]))
+            
+        return retorno
     
 def criaArvoreFromDF(df):
     arv = PATRICIA()
