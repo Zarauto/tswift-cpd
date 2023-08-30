@@ -15,31 +15,33 @@ def mostraOpcoesMenuPrincipal():
     print("Selecione uma opção:\n\n[1] Listar Músicas\n[2] Buscar Música\n[3] Ver Estatísticas\n[4] Adicionar Música\n[0] Fechar Programa\n")        
         
 def menuPrincipal():
-    escolhaUsuário = -1
+    escolhaUsuario = -1
     
     while True:
         
         mostraOpcoesMenuPrincipal()
-        escolhaUsuário = input()
+        escolhaUsuario = input()
         print("\n")
         
         # Verificação de input
-        if type(escolhaUsuário) is not int or not 0<=escolhaUsuário<=4:
+        if not '0'<=escolhaUsuario<='4':
             print("Opção inválida. Insira um número de 0 a 4.\n")
             continue
         
-        if escolhaUsuário == 0:
+        escolhaUsuario = int(escolhaUsuario)
+        
+        if escolhaUsuario == 0:
             return
         
-        if escolhaUsuário == 1:
+        if escolhaUsuario == 1:
             menuListaMusicas()
             continue
         
-        if escolhaUsuário == 2:
+        if escolhaUsuario == 2:
             menuBusca()
             continue
             
-        if escolhaUsuário == 3:
+        if escolhaUsuario == 3:
             menuEstatisticas()
             continue
         
@@ -49,6 +51,9 @@ def menuListaMusicas():
     pass
 
 def menuBusca():
+    pass
+
+def menuEstatisticas():
     pass
 
 def menuAddMusica():

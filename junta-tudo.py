@@ -5,8 +5,9 @@ import operacoes as op
 import datasci as ds
 import pandas as pd
 import hash
+import menu
 
-arq.inicializaFromKaggle()
+#arq.inicializaFromKaggle()
 
 df = arq.abreLeitura()
     
@@ -18,7 +19,7 @@ pd.set_option('display.max_columns', None)  # Display all columns
 pd.set_option('display.max_rows', None)     # Display all rows
 pd.set_option('display.width', None)
 
-print(df)
+#print(df)
 #arq.abreHash().print()
 
 #print(df[df['album']=="Midnights"])
@@ -68,20 +69,21 @@ print([[x.palavra, x.freq] for x in l])"""
 
 #arq.inicializaFromKaggle()
 
-"""h = arq.abreHash()
-h.print()"""
+#h = arq.abreHash()
+#h.print()
 
-"""l = arq.abreFreq()
+#l = arq.abreFreq()
 
-for i in range(35):
+"""for i in range(35):
     print(l[i].palavra,l[i].freq)
 #hash.printFreq(l)"""
-"""l = h.to_list()
-l.sort()
+#l = h.to_list()
+#l.sort()
 
-for x in l:
-    print([[x.palavra, x.freq]])"""
+#for x in l:
+#    print([[x.palavra, x.freq]])
+
+menu.menuPrincipal()
     
-
 
 #arq.adicionaFrequenciaPalavras(1089633, 2031)
