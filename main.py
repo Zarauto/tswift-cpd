@@ -6,5 +6,3 @@ menu.checaInicializacao()
 
 # Abre o menu principal
 menu.menuPrincipal()
-    
-#menu.listaTodas()

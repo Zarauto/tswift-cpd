@@ -2,6 +2,7 @@ import arquivos as arq
 import operacoes as op
 import patricia as pat
 from os.path import exists
+import math
 
 
 # Verifica se precisa inicializar
@@ -321,6 +322,35 @@ def viewsTema():
     print('\n')
         
     op.graficoBarrasTema(tema)
+    
+def verFrequencia():
+    print("[1] Mostrar por ordem decrescente de frequência")
+    print("[2] Mostrar por ordem crescente de frequência")
+    
+    entrada = input()
+    
+    h = arq.abreHash()
+    
+    a = arq.abreArvore()
+    num = a.num_nodos
+    del a
+    
+    lista = h.to_list()
+    lista.sort()
+    
+    if entrada == '2':
+        lista.reverse()
+    
+    print("\n----------------------------------------------")
+    
+    esp = 16
+    
+    print(f"Palavra{' '*(esp-len('palavra'))} | Ocorrências | Frequência\n")
+    for t in lista:
+        print(f"{t.palavra}{' '*(esp-len(t.palavra))} | {t.freq}{' '*(len('ocorrencias')-int(math.log10(t.freq))-1)} | {(t.freq/num)*100:.2f} %")
+        
+    print('----------------------------------------------\n')
+        
     
 
 def menuAddMusica():
