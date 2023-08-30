@@ -43,3 +43,28 @@ def graficoBarrasAlbum(album):
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
     plt.show()
+
+def graficoBarrasTema(tema):
+    df = arq.abreLeitura()
+    df = df[df['tematica'] == tema]
+    #df = df[df['name', 'views']]
+    
+    plt.bar(df['name'],df['views'])
+    plt.xlabel('Músicas')
+    plt.ylabel('Views')
+    plt.title(f'Comparação de views no YouTube das músicas de temática "{tema}"')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.show()
+    
+def graficoBarrasTodas(decrescente):
+    df = arq.abreLeitura()
+    df = df.sort_values(by='views', ascending=not decrescente)
+    
+    plt.bar(df['name'],df['views'])
+    plt.xlabel('Músicas')
+    plt.ylabel('Views')
+    plt.title('Comparação de views no YouTube de todas as músicas')
+    plt.xticks(rotation=45, ha='right', fontsize=8)
+    plt.tight_layout()
+    plt.show()

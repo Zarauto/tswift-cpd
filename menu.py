@@ -279,11 +279,11 @@ def menuViews():
         return
     
     if entrada == '3':
-        pass
+        op.graficoBarrasTodas(True) 
         return
     
     if entrada == '4':
-        pass
+        op.graficoBarrasTodas(False) 
         return
     
     print("Opção inválida.\n")
@@ -304,13 +304,23 @@ def viewsAlbum():
     for i, row in albums.iterrows():
         if j == entrada:
             a = row['album']
-            df = arq.abreLeitura()
-            df = df[df['album'] == a]
-            break
-            
+            break   
         j+=1
         
     op.graficoBarrasAlbum(a)
+    
+def viewsTema():
+    temas = ['Romantica','Melancolica','Lembranca','Vingativa','Misc.']
+    
+    for i in range(len(temas)):
+        print(f"[{i+1}] {temas[i]}")
+    entrada = int(input('\nSeleção: '))
+    
+    tema = temas[entrada-1]
+    
+    print('\n')
+        
+    op.graficoBarrasTema(tema)
     
 
 def menuAddMusica():
