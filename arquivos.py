@@ -7,6 +7,7 @@ import re
 import sys
 import patricia as pat
 
+
 def limpaLinha():
     sys.stdout.write("\033[F")  # Move cursor up one line
     sys.stdout.write("\033[K")  # Clear the line
@@ -248,4 +249,4 @@ def abreAlbums():
     
 def salvaAlbums(df):
     with open(lista_albums, 'wb') as arq:
-        pickle.dump(df, lista_albums)
+        pickle.dump(df, arq)

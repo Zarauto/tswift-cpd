@@ -68,3 +68,13 @@ def graficoBarrasTodas(decrescente):
     plt.xticks(rotation=45, ha='right', fontsize=8)
     plt.tight_layout()
     plt.show()
+    
+def novoAlbum(albums):
+    nome = input("\nNome do álbum: ")
+    data = input("Data de lançamento (yyyy-mm-dd): ")
+    
+    pd.concat([albums, pd.DataFrame({'name': nome, 'release_date': data}, index=[0])], ignore_index=True)
+    
+    arq.salvaAlbums(albums)
+    
+    return nome

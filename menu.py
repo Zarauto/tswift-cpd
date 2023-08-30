@@ -3,6 +3,11 @@ import operacoes as op
 import patricia as pat
 from os.path import exists
 import math
+import pandas as pd
+import tkinter as tk
+from tkinter import filedialog
+import pickle
+
 
 
 # Verifica se precisa inicializar
@@ -354,4 +359,97 @@ def verFrequencia():
     
 
 def menuAddMusica():
-    pass
+    print()
+    nome = input("Nome da música: ")
+    
+    albums = arq.abreAlbums()
+    
+    print("\n[1] Álbum existente")
+    print("[2] Novo álbum")
+    entrada = input()
+    
+    if entrada == '1':
+        j = 1
+        for i, row in albums.iterrows():
+            print(f"[{j}] {row['album']}")
+            j += 1
+            
+        entrada = int(input('\nSeleção: '))
+        
+        j = 1
+        for i, row in albums.iterrows():
+            if j == entrada:
+                album = row['album']
+            j+=1
+                
+    else:
+        album = op.novoAlbum(albums)
+        
+    print("Escolha a temática:")
+    temas = ['Romantica','Melancolica','Lembranca','Vingativa','Misc.']
+    
+    for i in range(len(temas)):
+        print(f"[{i+1}] {temas[i]}")
+    entrada = int(input('\nSeleção: '))
+    
+    tema = temas[entrada-1]
+        
+    
+    track = input("Número de faixa da música no álbum: ")
+    url = input("Link para a música no YouTube: ")
+    
+    print('A seguir, selecione um arquivo .txt com a letra da música (qualquer tecla para continuar)')
+    input()
+    
+    root = tk.Tk()
+    root.withdraw()
+    path = filedialog.askopenfilename()
+    
+    with open(path, 'r') as src:
+        content = src.read()
+        
+    with open(arq.letras_bin, 'ab') as bf:
+        letra_bin = content.encode()
+        ini = bf.tell()
+        bf.write(letra_bin)
+        length = len(letra_bin)
+        
+        
+        
+    arq.adicionaFrequenciaPalavras(letra_bin)
+    
+    
+    row = {}
+    
+    
+    
+    df = arq.abreLeitura()
+    
+    row['id'] = df['id'].iloc[-1] + 1
+    row['name'] = nome
+    row['album'] = album
+    row['track_number'] = track
+    row['url'] = url
+    row['views'] = arq.getViewsFromYT(url)
+    row['tematica'] = tema
+    row['letra_ini'] = ini
+    row['letra_len'] = length
+    
+    row = pd.DataFrame(row, index=[0])
+    row = row[df.columns]
+    
+    #print(row)
+    
+    df = pd.concat([df, row], ignore_index=True)
+    #print(df)
+    
+    with open(arq.tgt_name, 'wb') as arquivo:
+        pickle.dump(df, arquivo)
+        
+    arv = arq.abreArvore()
+    folha = pat.folhaPatricia(row['name'], row['id'])
+    arv.insereFolha(folha)
+    
+    arq.salvaArvore(arv)
+    
+    
