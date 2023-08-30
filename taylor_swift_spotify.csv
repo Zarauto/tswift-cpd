@@ -1,6 +1,6 @@
 ,name,album,release_date,track_number,id,uri,acousticness,danceability,energy,instrumentalness,liveness,loudness,speechiness,tempo,valence,popularity,duration_ms
 0,Mine (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,1,7G0gBu6nLdhFDPRLc0HdDG,spotify:track:7G0gBu6nLdhFDPRLc0HdDG,0.00444,0.646,0.783,1.38e-06,0.171,-2.846,0.0356,121.08,0.49,89,231706
-1,Sparks Fly (Taylor’s Version),Speak Now (Taylor's Version),2023-07-07,2,3MytWN8L7shNYzGl4tAKRp,spotify:track:3MytWN8L7shNYzGl4tAKRp,0.0251,0.588,0.758,0.0,0.131,-2.347,0.0305,114.991,0.387,88,261230
+1,Sparks Fly (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,2,3MytWN8L7shNYzGl4tAKRp,spotify:track:3MytWN8L7shNYzGl4tAKRp,0.0251,0.588,0.758,0.0,0.131,-2.347,0.0305,114.991,0.387,88,261230
 2,Back To December (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,3,79uDOz0zuuWS7HWxzMmTa2,spotify:track:79uDOz0zuuWS7HWxzMmTa2,0.00621,0.497,0.635,0.0,0.117,-3.927,0.0273,142.063,0.203,90,294189
 3,Speak Now (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,4,5xXqyjLicvEpch72qEryFT,spotify:track:5xXqyjLicvEpch72qEryFT,0.248,0.727,0.677,0.0,0.143,-2.871,0.0325,118.995,0.639,87,242473
 4,Dear John (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,5,1zU8j1x3yi9xalMF96pzKp,spotify:track:1zU8j1x3yi9xalMF96pzKp,0.0236,0.419,0.47,0.0,0.163,-5.016,0.0296,119.294,0.133,87,405906
@@ -13,14 +13,14 @@
 11,Haunted (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,12,4tMzIAFTFdqGBQLdfbPces,spotify:track:4tMzIAFTFdqGBQLdfbPces,0.00667,0.427,0.915,0.0,0.221,-1.909,0.0619,162.201,0.355,85,245413
 12,Last Kiss (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,13,59KOoHFcw5XfICnO57holu,spotify:track:59KOoHFcw5XfICnO57holu,0.447,0.55,0.366,4.43e-06,0.101,-8.46,0.0276,79.401,0.16,84,369120
 13,Long Live (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,14,4hqJ4bSlYJOXb6Z4SRmzxs,spotify:track:4hqJ4bSlYJOXb6Z4SRmzxs,0.0122,0.375,0.65,0.0,0.189,-4.031,0.0402,203.89,0.0752,86,317960
-14,Ours (Taylor’s Version),Speak Now (Taylor's Version),2023-07-07,15,3yNJkriPzWjkkDAWHIAVUq,spotify:track:3yNJkriPzWjkkDAWHIAVUq,0.449,0.535,0.488,0.0,0.111,-8.261,0.0278,159.813,0.348,83,235803
-15,Superman (Taylor’s Version),Speak Now (Taylor's Version),2023-07-07,16,4evLyY5Ue1Wesc61t2KXAU,spotify:track:4evLyY5Ue1Wesc61t2KXAU,0.0031,0.533,0.742,0.0,0.108,-3.473,0.0303,131.93,0.356,81,274945
-16,Electric Touch (feat. Fall Out Boy) (Taylor’s Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,17,4e3ZNTAV6PCrdYMUrUlMpQ,spotify:track:4e3ZNTAV6PCrdYMUrUlMpQ,0.0164,0.547,0.855,0.0,0.144,-4.7,0.0597,131.073,0.282,86,266466
-17,When Emma Falls in Love (Taylor’s Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,18,0zo975x58DlXbZllWvfYhg,spotify:track:0zo975x58DlXbZllWvfYhg,0.159,0.474,0.763,0.0,0.138,-4.632,0.0505,78.133,0.231,86,252385
-18,I Can See You (Taylor’s Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,19,5kHMfzgLZP95O9NBy0ku4v,spotify:track:5kHMfzgLZP95O9NBy0ku4v,0.0586,0.694,0.764,0.0,0.0608,-4.893,0.0337,123.044,0.819,93,273186
-19,Castles Crumbling (feat. Hayley Williams) (Taylor’s Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,20,4ABYxlb92WBIjHu7TIKmml,spotify:track:4ABYxlb92WBIjHu7TIKmml,0.362,0.576,0.57,0.0,0.0668,-7.925,0.0434,147.803,0.378,86,306062
-20,Foolish One (Taylor’s Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,21,4s8BIKx4Zh6ryAEz8RTlaU,spotify:track:4s8BIKx4Zh6ryAEz8RTlaU,0.617,0.671,0.588,0.0,0.111,-4.675,0.0299,96.965,0.543,86,311765
-21,Timeless (Taylor’s Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,22,1HCdems7PQZRj42QDWLA0A,spotify:track:1HCdems7PQZRj42QDWLA0A,0.3,0.624,0.585,0.0,0.0916,-5.847,0.0328,142.883,0.65,86,321396
+14,Ours (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,15,3yNJkriPzWjkkDAWHIAVUq,spotify:track:3yNJkriPzWjkkDAWHIAVUq,0.449,0.535,0.488,0.0,0.111,-8.261,0.0278,159.813,0.348,83,235803
+15,Superman (Taylor's Version),Speak Now (Taylor's Version),2023-07-07,16,4evLyY5Ue1Wesc61t2KXAU,spotify:track:4evLyY5Ue1Wesc61t2KXAU,0.0031,0.533,0.742,0.0,0.108,-3.473,0.0303,131.93,0.356,81,274945
+16,Electric Touch (feat. Fall Out Boy) (Taylor's Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,17,4e3ZNTAV6PCrdYMUrUlMpQ,spotify:track:4e3ZNTAV6PCrdYMUrUlMpQ,0.0164,0.547,0.855,0.0,0.144,-4.7,0.0597,131.073,0.282,86,266466
+17,When Emma Falls in Love (Taylor's Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,18,0zo975x58DlXbZllWvfYhg,spotify:track:0zo975x58DlXbZllWvfYhg,0.159,0.474,0.763,0.0,0.138,-4.632,0.0505,78.133,0.231,86,252385
+18,I Can See You (Taylor's Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,19,5kHMfzgLZP95O9NBy0ku4v,spotify:track:5kHMfzgLZP95O9NBy0ku4v,0.0586,0.694,0.764,0.0,0.0608,-4.893,0.0337,123.044,0.819,93,273186
+19,Castles Crumbling (feat. Hayley Williams) (Taylor's Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,20,4ABYxlb92WBIjHu7TIKmml,spotify:track:4ABYxlb92WBIjHu7TIKmml,0.362,0.576,0.57,0.0,0.0668,-7.925,0.0434,147.803,0.378,86,306062
+20,Foolish One (Taylor's Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,21,4s8BIKx4Zh6ryAEz8RTlaU,spotify:track:4s8BIKx4Zh6ryAEz8RTlaU,0.617,0.671,0.588,0.0,0.111,-4.675,0.0299,96.965,0.543,86,311765
+21,Timeless (Taylor's Version) (From The Vault),Speak Now (Taylor's Version),2023-07-07,22,1HCdems7PQZRj42QDWLA0A,spotify:track:1HCdems7PQZRj42QDWLA0A,0.3,0.624,0.585,0.0,0.0916,-5.847,0.0328,142.883,0.65,86,321396
 22,Lavender Haze,Midnights (The Til Dawn Edition),2023-05-26,1,24emu3sabKISjRkrys28jq,spotify:track:24emu3sabKISjRkrys28jq,0.236,0.735,0.454,0.00113,0.133,-10.516,0.0876,97.043,0.0751,70,202395
 23,Maroon,Midnights (The Til Dawn Edition),2023-05-26,2,6qxvy9Pe4RJIq5JBVbbwbS,spotify:track:6qxvy9Pe4RJIq5JBVbbwbS,0.0609,0.65,0.397,1.4e-06,0.089,-8.237,0.0365,108.055,0.0382,69,218270
 24,Anti-Hero,Midnights (The Til Dawn Edition),2023-05-26,3,5qIHFdkW6phMsTZlN2g8Lc,spotify:track:5qIHFdkW6phMsTZlN2g8Lc,0.115,0.637,0.649,1.22e-06,0.147,-6.59,0.0584,96.935,0.497,70,200690
@@ -86,11 +86,11 @@
 84,I Almost Do (Taylor's Version),Red (Taylor's Version),2021-11-12,7,2r9CbjYgFhtAmcFv1cSquB,spotify:track:2r9CbjYgFhtAmcFv1cSquB,0.0167,0.511,0.559,0.0,0.113,-6.587,0.0264,145.88,0.248,72,244586
 85,We Are Never Ever Getting Back Together (Taylor's Version),Red (Taylor's Version),2021-11-12,8,5YqltLsjdqFtvqE7Nrysvs,spotify:track:5YqltLsjdqFtvqE7Nrysvs,0.0317,0.567,0.686,1.86e-06,0.0732,-6.139,0.175,172.014,0.716,82,193146
 86,Stay Stay Stay (Taylor's Version),Red (Taylor's Version),2021-11-12,9,7eQj6r5PIdYKEIZjucBMcq,spotify:track:7eQj6r5PIdYKEIZjucBMcq,0.0848,0.693,0.681,0.0,0.0768,-7.039,0.025,100.02,0.663,72,205786
-87,The Last Time (feat. Gary Lightbody of Snow Patrol) (Taylor’s Version),Red (Taylor's Version),2021-11-12,10,0y6kdSRCVQhSsHSpWvTUm7,spotify:track:0y6kdSRCVQhSsHSpWvTUm7,0.0399,0.502,0.534,0.0,0.0977,-5.954,0.0278,94.05,0.155,74,299080
+87,The Last Time (feat. Gary Lightbody of Snow Patrol) (Taylor's Version),Red (Taylor's Version),2021-11-12,10,0y6kdSRCVQhSsHSpWvTUm7,spotify:track:0y6kdSRCVQhSsHSpWvTUm7,0.0399,0.502,0.534,0.0,0.0977,-5.954,0.0278,94.05,0.155,74,299080
 88,Holy Ground (Taylor's Version),Red (Taylor's Version),2021-11-12,11,7J4b3LVCIGO4CMBDFLPoP6,spotify:track:7J4b3LVCIGO4CMBDFLPoP6,0.0288,0.622,0.809,0.00218,0.109,-5.623,0.0638,156.894,0.511,71,202960
 89,Sad Beautiful Tragic (Taylor's Version),Red (Taylor's Version),2021-11-12,12,73qMN9bXy7MSPwwGfH3wQr,spotify:track:73qMN9bXy7MSPwwGfH3wQr,0.622,0.601,0.406,9.19e-05,0.133,-11.827,0.0275,130.059,0.232,72,284773
 90,The Lucky One (Taylor's Version),Red (Taylor's Version),2021-11-12,13,4e5ayHsOLJNLTGfjau2mEw,spotify:track:4e5ayHsOLJNLTGfjau2mEw,0.066,0.686,0.571,0.0,0.0608,-7.138,0.05,117.889,0.538,71,240466
-91,Everything Has Changed (feat. Ed Sheeran) (Taylor’s Version),Red (Taylor's Version),2021-11-12,14,7qEUFOVcxRI19tbT68JcYK,spotify:track:7qEUFOVcxRI19tbT68JcYK,0.271,0.498,0.61,0.0,0.223,-5.098,0.0363,79.918,0.474,77,245426
+91,Everything Has Changed (feat. Ed Sheeran) (Taylor's Version),Red (Taylor's Version),2021-11-12,14,7qEUFOVcxRI19tbT68JcYK,spotify:track:7qEUFOVcxRI19tbT68JcYK,0.271,0.498,0.61,0.0,0.223,-5.098,0.0363,79.918,0.474,77,245426
 92,Starlight (Taylor's Version),Red (Taylor's Version),2021-11-12,15,7A2cNLRT0YJc1yjxHlKihs,spotify:track:7A2cNLRT0YJc1yjxHlKihs,0.00324,0.628,0.685,0.0,0.18,-5.864,0.0358,126.014,0.605,70,220413
 93,Begin Again (Taylor's Version),Red (Taylor's Version),2021-11-12,16,05GsNucq8Bngd9fnd4fRa0,spotify:track:05GsNucq8Bngd9fnd4fRa0,0.075,0.519,0.527,0.0,0.132,-7.673,0.0274,78.915,0.267,73,238866
 94,The Moment I Knew (Taylor's Version),Red (Taylor's Version),2021-11-12,17,0NRHj8hDwwmSPaA41o379r,spotify:track:0NRHj8hDwwmSPaA41o379r,0.0494,0.636,0.402,0.0,0.107,-7.855,0.031,125.952,0.208,70,285280
@@ -99,44 +99,44 @@
 97,State Of Grace (Acoustic Version) (Taylor's Version),Red (Taylor's Version),2021-11-12,20,5jAIouBES8LWMiriuNq170,spotify:track:5jAIouBES8LWMiriuNq170,0.663,0.445,0.131,1.57e-06,0.108,-13.778,0.0564,208.918,0.101,67,321640
 98,Ronan (Taylor's Version),Red (Taylor's Version),2021-11-12,21,7nWui6jiMM2m9qFmET1Mtj,spotify:track:7nWui6jiMM2m9qFmET1Mtj,0.661,0.623,0.279,0.0,0.193,-10.802,0.031,116.04,0.38,65,264253
 99,Better Man (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,22,4OmFmE0fzcMG6g0Y8p4eSD,spotify:track:4OmFmE0fzcMG6g0Y8p4eSD,0.214,0.473,0.579,0.0,0.0877,-5.824,0.0384,73.942,0.255,74,297013
-100,Nothing New (feat. Phoebe Bridgers) (Taylor’s Version) (From The Vault),Red (Taylor's Version),2021-11-12,23,01K4zKU104LyJ8gMb7227B,spotify:track:01K4zKU104LyJ8gMb7227B,0.817,0.606,0.377,0.0,0.154,-9.455,0.0275,101.96,0.446,77,258812
+100,Nothing New (feat. Phoebe Bridgers) (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,23,01K4zKU104LyJ8gMb7227B,spotify:track:01K4zKU104LyJ8gMb7227B,0.817,0.606,0.377,0.0,0.154,-9.455,0.0275,101.96,0.446,77,258812
 101,Babe (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,24,0v4z1tuZvn6LGknom9Qx7d,spotify:track:0v4z1tuZvn6LGknom9Qx7d,0.0538,0.584,0.743,2.83e-06,0.121,-7.075,0.0931,167.844,0.746,74,224240
 102,Message In A Bottle (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,25,3z6XUommYDWPHeFhmhhT6j,spotify:track:3z6XUommYDWPHeFhmhhT6j,0.00188,0.622,0.791,3.72e-06,0.083,-6.106,0.0535,115.915,0.494,76,225960
-103,I Bet You Think About Me (feat. Chris Stapleton) (Taylor’s Version) (From The Vault),Red (Taylor's Version),2021-11-12,26,4CkgMiMqZ5JzW9iYXSTMTL,spotify:track:4CkgMiMqZ5JzW9iYXSTMTL,0.167,0.391,0.715,0.0,0.183,-4.516,0.0495,149.654,0.473,78,285106
+103,I Bet You Think About Me (feat. Chris Stapleton) (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,26,4CkgMiMqZ5JzW9iYXSTMTL,spotify:track:4CkgMiMqZ5JzW9iYXSTMTL,0.167,0.391,0.715,0.0,0.183,-4.516,0.0495,149.654,0.473,78,285106
 104,Forever Winter (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,27,3oGVx9RBmiYGv5ZCecWLkx,spotify:track:3oGVx9RBmiYGv5ZCecWLkx,0.256,0.611,0.552,0.0,0.134,-5.828,0.031,116.012,0.41,70,263533
-105,Run (feat. Ed Sheeran) (Taylor’s Version) (From The Vault),Red (Taylor's Version),2021-11-12,28,4IQkfUsrwXol38VV3U7t7T,spotify:track:4IQkfUsrwXol38VV3U7t7T,0.817,0.61,0.488,0.0,0.312,-6.918,0.0293,125.039,0.443,72,240226
+105,Run (feat. Ed Sheeran) (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,28,4IQkfUsrwXol38VV3U7t7T,spotify:track:4IQkfUsrwXol38VV3U7t7T,0.817,0.61,0.488,0.0,0.312,-6.918,0.0293,125.039,0.443,72,240226
 106,The Very First Night (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,29,6pYNq0ZwpPVazKzsqpf0G8,spotify:track:6pYNq0ZwpPVazKzsqpf0G8,0.00115,0.678,0.733,0.0,0.104,-5.025,0.0281,121.009,0.581,77,200280
 107,All Too Well (10 Minute Version) (Taylor's Version) (From The Vault),Red (Taylor's Version),2021-11-12,30,5enxwA8aAbwZbf5qCHORXi,spotify:track:5enxwA8aAbwZbf5qCHORXi,0.274,0.631,0.518,0.0,0.088,-8.771,0.0303,93.023,0.205,87,613026
-108,Fearless (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,1,77sMIMlNaSURUAXq5coCxE,spotify:track:77sMIMlNaSURUAXq5coCxE,0.0122,0.569,0.741,0.0,0.333,-4.963,0.0282,100.118,0.43,85,241591
-109,Fifteen (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,2,2nqio0SfWg6gh2eCtfuMa5,spotify:track:2nqio0SfWg6gh2eCtfuMa5,0.116,0.559,0.646,0.0,0.32,-4.61,0.0272,95.466,0.289,75,294419
-110,Love Story (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,3,6YvqWjhGD8mB5QXcbcUKtx,spotify:track:6YvqWjhGD8mB5QXcbcUKtx,0.13,0.627,0.792,3.97e-06,0.0845,-4.311,0.031,119.054,0.415,83,235766
-111,Hey Stephen (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,4,550erGcdD9n6PnwxrvYqZT,spotify:track:550erGcdD9n6PnwxrvYqZT,0.106,0.788,0.571,0.0,0.0934,-6.135,0.0296,115.99,0.797,73,254254
-112,White Horse (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,5,5YL553x8sHderRBDlm3NM3,spotify:track:5YL553x8sHderRBDlm3NM3,0.369,0.423,0.517,0.0,0.177,-7.377,0.0486,185.262,0.366,74,234515
-113,You Belong With Me (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,6,1qrpoAMXodY6895hGKoUpA,spotify:track:1qrpoAMXodY6895hGKoUpA,0.0623,0.632,0.773,0.0,0.0885,-4.856,0.0346,130.033,0.474,87,231124
-114,Breathe (feat. Colbie Caillat) (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,7,7HC7R2D8WjXVcUHJyEGjRs,spotify:track:7HC7R2D8WjXVcUHJyEGjRs,0.156,0.506,0.626,0.0,0.228,-6.066,0.0287,148.035,0.321,71,263377
-115,Tell Me Why (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,8,0k0vFacOHNuArLWMiH60p7,spotify:track:0k0vFacOHNuArLWMiH60p7,0.0222,0.578,0.909,0.0,0.333,-3.669,0.0628,100.023,0.541,70,200575
-116,You’re Not Sorry (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,9,6iiAfo4wTA2CVC3Uwx9uh8,spotify:track:6iiAfo4wTA2CVC3Uwx9uh8,0.0538,0.506,0.444,0.0,0.123,-4.99,0.0285,133.873,0.241,72,261842
-117,The Way I Loved You (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,10,22bPsP2jCgbLUvh82U0Z3M,spotify:track:22bPsP2jCgbLUvh82U0Z3M,0.0033,0.402,0.732,0.0,0.108,-4.665,0.0484,161.032,0.472,85,243136
-118,Forever & Always (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,11,1msEuwSBneBKpVCZQcFTsU,spotify:track:1msEuwSBneBKpVCZQcFTsU,0.0231,0.598,0.821,0.0,0.143,-4.433,0.0447,128.03,0.673,75,225328
-119,The Best Day (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,12,6ON9UuIq49xXY9GPmHIYRp,spotify:track:6ON9UuIq49xXY9GPmHIYRp,0.488,0.642,0.576,0.0,0.159,-8.524,0.0282,125.0,0.469,69,245290
-120,Change (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,13,3ExweHKZF9B752DPQByRVT,spotify:track:3ExweHKZF9B752DPQByRVT,0.000191,0.499,0.815,0.0,0.181,-4.063,0.0341,95.999,0.344,68,279359
-121,Jump Then Fall (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,14,2m3ObD945KvpE5y9A1eUWm,spotify:track:2m3ObD945KvpE5y9A1eUWm,0.0474,0.572,0.69,0.0,0.0897,-6.201,0.0358,160.111,0.624,70,237580
-122,Untouchable (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,15,0tQ9vBYpldCuikPsbgOVKA,spotify:track:0tQ9vBYpldCuikPsbgOVKA,0.0181,0.393,0.531,0.0,0.169,-6.112,0.0329,200.391,0.224,69,312107
-123,Forever & Always (Piano Version) (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,16,01QdEx6kFr78ZejhQtWR5m,spotify:track:01QdEx6kFr78ZejhQtWR5m,0.819,0.546,0.273,0.0,0.137,-9.208,0.0308,118.753,0.271,68,267833
-124,Come In With The Rain (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,17,1n2wszmJyVkw6FHqyLnQsY,spotify:track:1n2wszmJyVkw6FHqyLnQsY,0.0406,0.476,0.564,0.0,0.102,-5.677,0.0269,143.929,0.167,67,237338
-125,Superstar (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,18,51A8eKvvZz9uydvIZ7xRSV,spotify:track:51A8eKvvZz9uydvIZ7xRSV,0.157,0.454,0.555,0.0,0.343,-6.69,0.0283,171.862,0.171,66,263865
-126,The Other Side Of The Door (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,19,1cSFlSBdpT4F5vb1frQ231,spotify:track:1cSFlSBdpT4F5vb1frQ231,0.0279,0.432,0.873,0.0,0.167,-4.367,0.0577,163.936,0.629,72,238443
-127,Today Was A Fairytale (Taylor’s Version),Fearless (Taylor's Version),2021-04-09,20,2JoJrsEV15OzbijS47lids,spotify:track:2JoJrsEV15OzbijS47lids,0.0135,0.482,0.779,0.0,0.296,-5.025,0.0409,158.162,0.328,69,241822
-128,You All Over Me (feat. Maren Morris) (Taylor’s Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,21,4CHpVfAhuxNJ3ibExe6kxO,spotify:track:4CHpVfAhuxNJ3ibExe6kxO,0.816,0.599,0.494,0.0,0.101,-7.61,0.0372,142.893,0.44,67,220839
-129,Mr. Perfectly Fine (Taylor’s Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,22,2CYVETnhM9aytqrazYYwrK,spotify:track:2CYVETnhM9aytqrazYYwrK,0.162,0.66,0.817,0.0,0.0667,-6.269,0.0521,135.942,0.714,79,277591
-130,We Were Happy (Taylor’s Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,23,34V9RiEPe8MNdU32qJsJa1,spotify:track:34V9RiEPe8MNdU32qJsJa1,0.849,0.609,0.373,0.0,0.0779,-8.819,0.0263,106.007,0.13,69,244236
-131,That’s When (feat. Keith Urban) (Taylor’s Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,24,7eResoqEJJAVTkQYSqvO3P,spotify:track:7eResoqEJJAVTkQYSqvO3P,0.225,0.588,0.608,0.0,0.092,-7.062,0.0365,90.201,0.508,71,189495
-132,Don’t You (Taylor’s Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,25,4uuEGH5SVuzkkSFjo2DEiY,spotify:track:4uuEGH5SVuzkkSFjo2DEiY,0.514,0.563,0.473,1.2e-05,0.109,-11.548,0.0503,101.934,0.405,70,208608
-133,Bye Bye Baby (Taylor’s Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,26,4qUijfYU8EoIWiY6oSyrgT,spotify:track:4qUijfYU8EoIWiY6oSyrgT,0.334,0.624,0.624,0.0,0.0995,-7.86,0.0539,80.132,0.527,69,242157
+108,Fearless (Taylor's Version),Fearless (Taylor's Version),2021-04-09,1,77sMIMlNaSURUAXq5coCxE,spotify:track:77sMIMlNaSURUAXq5coCxE,0.0122,0.569,0.741,0.0,0.333,-4.963,0.0282,100.118,0.43,85,241591
+109,Fifteen (Taylor's Version),Fearless (Taylor's Version),2021-04-09,2,2nqio0SfWg6gh2eCtfuMa5,spotify:track:2nqio0SfWg6gh2eCtfuMa5,0.116,0.559,0.646,0.0,0.32,-4.61,0.0272,95.466,0.289,75,294419
+110,Love Story (Taylor's Version),Fearless (Taylor's Version),2021-04-09,3,6YvqWjhGD8mB5QXcbcUKtx,spotify:track:6YvqWjhGD8mB5QXcbcUKtx,0.13,0.627,0.792,3.97e-06,0.0845,-4.311,0.031,119.054,0.415,83,235766
+111,Hey Stephen (Taylor's Version),Fearless (Taylor's Version),2021-04-09,4,550erGcdD9n6PnwxrvYqZT,spotify:track:550erGcdD9n6PnwxrvYqZT,0.106,0.788,0.571,0.0,0.0934,-6.135,0.0296,115.99,0.797,73,254254
+112,White Horse (Taylor's Version),Fearless (Taylor's Version),2021-04-09,5,5YL553x8sHderRBDlm3NM3,spotify:track:5YL553x8sHderRBDlm3NM3,0.369,0.423,0.517,0.0,0.177,-7.377,0.0486,185.262,0.366,74,234515
+113,You Belong With Me (Taylor's Version),Fearless (Taylor's Version),2021-04-09,6,1qrpoAMXodY6895hGKoUpA,spotify:track:1qrpoAMXodY6895hGKoUpA,0.0623,0.632,0.773,0.0,0.0885,-4.856,0.0346,130.033,0.474,87,231124
+114,Breathe (feat. Colbie Caillat) (Taylor's Version),Fearless (Taylor's Version),2021-04-09,7,7HC7R2D8WjXVcUHJyEGjRs,spotify:track:7HC7R2D8WjXVcUHJyEGjRs,0.156,0.506,0.626,0.0,0.228,-6.066,0.0287,148.035,0.321,71,263377
+115,Tell Me Why (Taylor's Version),Fearless (Taylor's Version),2021-04-09,8,0k0vFacOHNuArLWMiH60p7,spotify:track:0k0vFacOHNuArLWMiH60p7,0.0222,0.578,0.909,0.0,0.333,-3.669,0.0628,100.023,0.541,70,200575
+116,You're Not Sorry (Taylor's Version),Fearless (Taylor's Version),2021-04-09,9,6iiAfo4wTA2CVC3Uwx9uh8,spotify:track:6iiAfo4wTA2CVC3Uwx9uh8,0.0538,0.506,0.444,0.0,0.123,-4.99,0.0285,133.873,0.241,72,261842
+117,The Way I Loved You (Taylor's Version),Fearless (Taylor's Version),2021-04-09,10,22bPsP2jCgbLUvh82U0Z3M,spotify:track:22bPsP2jCgbLUvh82U0Z3M,0.0033,0.402,0.732,0.0,0.108,-4.665,0.0484,161.032,0.472,85,243136
+118,Forever & Always (Taylor's Version),Fearless (Taylor's Version),2021-04-09,11,1msEuwSBneBKpVCZQcFTsU,spotify:track:1msEuwSBneBKpVCZQcFTsU,0.0231,0.598,0.821,0.0,0.143,-4.433,0.0447,128.03,0.673,75,225328
+119,The Best Day (Taylor's Version),Fearless (Taylor's Version),2021-04-09,12,6ON9UuIq49xXY9GPmHIYRp,spotify:track:6ON9UuIq49xXY9GPmHIYRp,0.488,0.642,0.576,0.0,0.159,-8.524,0.0282,125.0,0.469,69,245290
+120,Change (Taylor's Version),Fearless (Taylor's Version),2021-04-09,13,3ExweHKZF9B752DPQByRVT,spotify:track:3ExweHKZF9B752DPQByRVT,0.000191,0.499,0.815,0.0,0.181,-4.063,0.0341,95.999,0.344,68,279359
+121,Jump Then Fall (Taylor's Version),Fearless (Taylor's Version),2021-04-09,14,2m3ObD945KvpE5y9A1eUWm,spotify:track:2m3ObD945KvpE5y9A1eUWm,0.0474,0.572,0.69,0.0,0.0897,-6.201,0.0358,160.111,0.624,70,237580
+122,Untouchable (Taylor's Version),Fearless (Taylor's Version),2021-04-09,15,0tQ9vBYpldCuikPsbgOVKA,spotify:track:0tQ9vBYpldCuikPsbgOVKA,0.0181,0.393,0.531,0.0,0.169,-6.112,0.0329,200.391,0.224,69,312107
+123,Forever & Always (Piano Version) (Taylor's Version),Fearless (Taylor's Version),2021-04-09,16,01QdEx6kFr78ZejhQtWR5m,spotify:track:01QdEx6kFr78ZejhQtWR5m,0.819,0.546,0.273,0.0,0.137,-9.208,0.0308,118.753,0.271,68,267833
+124,Come In With The Rain (Taylor's Version),Fearless (Taylor's Version),2021-04-09,17,1n2wszmJyVkw6FHqyLnQsY,spotify:track:1n2wszmJyVkw6FHqyLnQsY,0.0406,0.476,0.564,0.0,0.102,-5.677,0.0269,143.929,0.167,67,237338
+125,Superstar (Taylor's Version),Fearless (Taylor's Version),2021-04-09,18,51A8eKvvZz9uydvIZ7xRSV,spotify:track:51A8eKvvZz9uydvIZ7xRSV,0.157,0.454,0.555,0.0,0.343,-6.69,0.0283,171.862,0.171,66,263865
+126,The Other Side Of The Door (Taylor's Version),Fearless (Taylor's Version),2021-04-09,19,1cSFlSBdpT4F5vb1frQ231,spotify:track:1cSFlSBdpT4F5vb1frQ231,0.0279,0.432,0.873,0.0,0.167,-4.367,0.0577,163.936,0.629,72,238443
+127,Today Was A Fairytale (Taylor's Version),Fearless (Taylor's Version),2021-04-09,20,2JoJrsEV15OzbijS47lids,spotify:track:2JoJrsEV15OzbijS47lids,0.0135,0.482,0.779,0.0,0.296,-5.025,0.0409,158.162,0.328,69,241822
+128,You All Over Me (feat. Maren Morris) (Taylor's Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,21,4CHpVfAhuxNJ3ibExe6kxO,spotify:track:4CHpVfAhuxNJ3ibExe6kxO,0.816,0.599,0.494,0.0,0.101,-7.61,0.0372,142.893,0.44,67,220839
+129,Mr. Perfectly Fine (Taylor's Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,22,2CYVETnhM9aytqrazYYwrK,spotify:track:2CYVETnhM9aytqrazYYwrK,0.162,0.66,0.817,0.0,0.0667,-6.269,0.0521,135.942,0.714,79,277591
+130,We Were Happy (Taylor's Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,23,34V9RiEPe8MNdU32qJsJa1,spotify:track:34V9RiEPe8MNdU32qJsJa1,0.849,0.609,0.373,0.0,0.0779,-8.819,0.0263,106.007,0.13,69,244236
+131,That's When (feat. Keith Urban) (Taylor's Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,24,7eResoqEJJAVTkQYSqvO3P,spotify:track:7eResoqEJJAVTkQYSqvO3P,0.225,0.588,0.608,0.0,0.092,-7.062,0.0365,90.201,0.508,71,189495
+132,Don't You (Taylor's Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,25,4uuEGH5SVuzkkSFjo2DEiY,spotify:track:4uuEGH5SVuzkkSFjo2DEiY,0.514,0.563,0.473,1.2e-05,0.109,-11.548,0.0503,101.934,0.405,70,208608
+133,Bye Bye Baby (Taylor's Version) (From The Vault),Fearless (Taylor's Version),2021-04-09,26,4qUijfYU8EoIWiY6oSyrgT,spotify:track:4qUijfYU8EoIWiY6oSyrgT,0.334,0.624,0.624,0.0,0.0995,-7.86,0.0539,80.132,0.527,69,242157
 134,willow,evermore (deluxe version),2021-01-07,1,2gVhfX2Gy1T9kDuS9azrF7,spotify:track:2gVhfX2Gy1T9kDuS9azrF7,0.833,0.392,0.574,0.00179,0.145,-9.195,0.17,81.112,0.529,73,214706
 135,champagne problems,evermore (deluxe version),2021-01-07,2,1gcyHQpBQ1lfXGdhZmWrHP,spotify:track:1gcyHQpBQ1lfXGdhZmWrHP,0.92,0.462,0.24,0.0,0.113,-12.077,0.0377,171.319,0.32,74,244000
 136,gold rush,evermore (deluxe version),2021-01-07,3,3Dby3p1m6IOZn2gIIqECgK,spotify:track:3Dby3p1m6IOZn2gIIqECgK,0.83,0.512,0.462,0.166,0.121,-10.491,0.0408,112.05,0.353,71,185320
-137,‘tis the damn season,evermore (deluxe version),2021-01-07,4,6sQckd3Z8NPxVVKUnavY1F,spotify:track:6sQckd3Z8NPxVVKUnavY1F,0.735,0.575,0.434,6.59e-05,0.105,-8.193,0.0312,145.916,0.348,72,229840
+137,'tis the damn season,evermore (deluxe version),2021-01-07,4,6sQckd3Z8NPxVVKUnavY1F,spotify:track:6sQckd3Z8NPxVVKUnavY1F,0.735,0.575,0.434,6.59e-05,0.105,-8.193,0.0312,145.916,0.348,72,229840
 138,tolerate it,evermore (deluxe version),2021-01-07,5,6lCvK2AR2uOKkVFCVlAzzm,spotify:track:6lCvK2AR2uOKkVFCVlAzzm,0.878,0.316,0.361,2.67e-05,0.0797,-10.381,0.0488,74.952,0.221,72,245440
 139,"no body, no crime (feat. HAIM)",evermore (deluxe version),2021-01-07,6,6uwfVkaOM1mcMkFmSn35ix,spotify:track:6uwfVkaOM1mcMkFmSn35ix,0.418,0.546,0.613,0.0,0.103,-7.589,0.0264,79.015,0.535,71,215626
 140,happiness,evermore (deluxe version),2021-01-07,7,55Vf4bimc1Rtfg0PAQRAo2,spotify:track:55Vf4bimc1Rtfg0PAQRAo2,0.87,0.559,0.334,0.0,0.114,-10.733,0.0376,122.079,0.211,69,315146
@@ -149,7 +149,7 @@
 147,closure,evermore (deluxe version),2021-01-07,14,6a8aUhYbaQBUI8PcJ5ZmQ6,spotify:track:6a8aUhYbaQBUI8PcJ5ZmQ6,0.835,0.689,0.704,4.83e-06,0.134,-10.813,0.245,151.884,0.92,67,180653
 148,evermore (feat. Bon Iver),evermore (deluxe version),2021-01-07,15,6Wlq9rqkxrqj5Kls4Kw14H,spotify:track:6Wlq9rqkxrqj5Kls4Kw14H,0.937,0.39,0.27,0.00227,0.111,-10.673,0.0308,125.177,0.32,70,304106
 149,right where you left me - bonus track,evermore (deluxe version),2021-01-07,16,3zwMVvkBe2qIKDObWgXw4N,spotify:track:3zwMVvkBe2qIKDObWgXw4N,0.769,0.581,0.619,0.000106,0.117,-6.524,0.0282,137.915,0.645,81,245026
-150,it’s time to go - bonus track,evermore (deluxe version),2021-01-07,17,1kdWw77ZpYOkhxeuhzU1j6,spotify:track:1kdWw77ZpYOkhxeuhzU1j6,0.801,0.592,0.41,1.39e-05,0.09,-12.426,0.0397,151.923,0.416,72,254640
+150,it's time to go - bonus track,evermore (deluxe version),2021-01-07,17,1kdWw77ZpYOkhxeuhzU1j6,spotify:track:1kdWw77ZpYOkhxeuhzU1j6,0.801,0.592,0.41,1.39e-05,0.09,-12.426,0.0397,151.923,0.416,72,254640
 151,willow,evermore,2020-12-11,1,0lx2cLdOt3piJbcaXIV74f,spotify:track:0lx2cLdOt3piJbcaXIV74f,0.833,0.392,0.574,0.00179,0.145,-9.195,0.17,81.112,0.529,82,214706
 152,champagne problems,evermore,2020-12-11,2,0sY6ZUTh4yoctD8VIXz339,spotify:track:0sY6ZUTh4yoctD8VIXz339,0.92,0.462,0.24,0.0,0.113,-12.077,0.0377,171.319,0.32,83,244000
 153,gold rush,evermore,2020-12-11,3,5BK0uqwY9DNfZ630STAEaq,spotify:track:5BK0uqwY9DNfZ630STAEaq,0.83,0.512,0.462,0.166,0.121,-10.491,0.0408,112.05,0.353,75,185320
@@ -243,17 +243,17 @@
 241,Cornelia Street,Lover,2019-08-23,9,12M5uqx0ZuwkpLp5rJim1a,spotify:track:12M5uqx0ZuwkpLp5rJim1a,0.781,0.824,0.624,0.000189,0.1,-9.728,0.0827,102.012,0.248,82,287266
 242,Death By A Thousand Cuts,Lover,2019-08-23,10,2dgFqt3w9xIQRjhPtwNk3D,spotify:track:2dgFqt3w9xIQRjhPtwNk3D,0.454,0.712,0.732,0.0,0.319,-6.754,0.0629,94.071,0.313,81,198533
 243,London Boy,Lover,2019-08-23,11,1LLXZFeAHK9R4xUramtUKw,spotify:track:1LLXZFeAHK9R4xUramtUKw,0.0246,0.695,0.71,0.000104,0.133,-6.639,0.05,157.925,0.557,82,190240
-244,Soon You’ll Get Better (feat. The Chicks),Lover,2019-08-23,12,4AYtqFyFbX0Xkc2wtcygTr,spotify:track:4AYtqFyFbX0Xkc2wtcygTr,0.907,0.433,0.182,0.0,0.123,-12.566,0.0641,207.476,0.421,74,201586
+244,Soon You'll Get Better (feat. The Chicks),Lover,2019-08-23,12,4AYtqFyFbX0Xkc2wtcygTr,spotify:track:4AYtqFyFbX0Xkc2wtcygTr,0.907,0.433,0.182,0.0,0.123,-12.566,0.0641,207.476,0.421,74,201586
 245,False God,Lover,2019-08-23,13,5hQSXkFgbxjZo9uCwd11so,spotify:track:5hQSXkFgbxjZo9uCwd11so,0.736,0.739,0.32,0.000147,0.111,-10.862,0.239,79.97,0.351,79,200306
 246,You Need To Calm Down,Lover,2019-08-23,14,6RRNNciQGZEXnqk8SQ9yv5,spotify:track:6RRNNciQGZEXnqk8SQ9yv5,0.00929,0.771,0.671,0.0,0.0637,-5.617,0.0553,85.026,0.714,84,171360
 247,Afterglow,Lover,2019-08-23,15,1SymEzIT3H8UZfibCs3TYi,spotify:track:1SymEzIT3H8UZfibCs3TYi,0.13,0.756,0.449,0.0,0.114,-8.746,0.0344,111.011,0.399,83,223293
 248,ME! (feat. Brendon Urie of Panic! At The Disco),Lover,2019-08-23,16,2Rk4JlNc2TPmZe2af99d45,spotify:track:2Rk4JlNc2TPmZe2af99d45,0.033,0.61,0.83,0.0,0.118,-4.105,0.0571,182.162,0.728,82,193000
-249,It’s Nice To Have A Friend,Lover,2019-08-23,17,1SmiQ65iSAbPto6gPFlBYm,spotify:track:1SmiQ65iSAbPto6gPFlBYm,0.971,0.737,0.175,0.000337,0.171,-9.912,0.0401,70.008,0.545,74,150440
+249,It's Nice To Have A Friend,Lover,2019-08-23,17,1SmiQ65iSAbPto6gPFlBYm,spotify:track:1SmiQ65iSAbPto6gPFlBYm,0.971,0.737,0.175,0.000337,0.171,-9.912,0.0401,70.008,0.545,74,150440
 250,Daylight,Lover,2019-08-23,18,1fzAuUVbzlhZ1lJAx9PtY6,spotify:track:1fzAuUVbzlhZ1lJAx9PtY6,0.808,0.557,0.496,0.000173,0.0772,-9.602,0.0563,149.983,0.265,85,293453
 251,...Ready For It?,reputation,2017-11-10,1,2yLa0QULdQr0qAIvVwN6B5,spotify:track:2yLa0QULdQr0qAIvVwN6B5,0.0527,0.613,0.764,0.0,0.197,-6.509,0.136,160.015,0.417,85,208186
 252,End Game,reputation,2017-11-10,2,2x0WlnmfG39ZuDmstl9xfX,spotify:track:2x0WlnmfG39ZuDmstl9xfX,0.00845,0.649,0.589,0.0,0.108,-6.237,0.0558,159.073,0.151,81,244826
 253,I Did Something Bad,reputation,2017-11-10,3,4svZDCRz4cJoneBpjpx8DJ,spotify:track:4svZDCRz4cJoneBpjpx8DJ,0.0679,0.696,0.602,2.11e-05,0.0696,-6.156,0.159,82.989,0.305,82,238253
-254,Don’t Blame Me,reputation,2017-11-10,4,1R0a2iXumgCiFb7HEZ7gUE,spotify:track:1R0a2iXumgCiFb7HEZ7gUE,0.106,0.615,0.534,1.76e-05,0.0607,-6.719,0.0386,135.917,0.193,91,236413
+254,Don't Blame Me,reputation,2017-11-10,4,1R0a2iXumgCiFb7HEZ7gUE,spotify:track:1R0a2iXumgCiFb7HEZ7gUE,0.106,0.615,0.534,1.76e-05,0.0607,-6.719,0.0386,135.917,0.193,91,236413
 255,Delicate,reputation,2017-11-10,5,6NFyWDv5CjfwuzoCkw47Xf,spotify:track:6NFyWDv5CjfwuzoCkw47Xf,0.216,0.75,0.404,0.000357,0.0911,-10.178,0.0682,95.045,0.0499,86,232253
 256,Look What You Made Me Do,reputation,2017-11-10,6,1P17dC1amhFzptugyAO7Il,spotify:track:1P17dC1amhFzptugyAO7Il,0.204,0.766,0.709,1.41e-05,0.126,-6.471,0.123,128.07,0.506,86,211853
 257,So It Goes...,reputation,2017-11-10,7,5PxFv9yJEg9dxvbZggykro,spotify:track:5PxFv9yJEg9dxvbZggykro,0.122,0.574,0.61,1.1e-06,0.13,-7.283,0.0732,74.957,0.374,76,227906
@@ -264,7 +264,7 @@
 262,Dress,reputation,2017-11-10,12,6oVxXO5oQ4pTpO8RSnkzvv,spotify:track:6oVxXO5oQ4pTpO8RSnkzvv,0.0329,0.719,0.469,0.0,0.169,-8.792,0.0533,120.085,0.0851,81,230373
 263,This Is Why We Can't Have Nice Things,reputation,2017-11-10,13,07NxDD1iKCHbAldceD7QLP,spotify:track:07NxDD1iKCHbAldceD7QLP,0.0156,0.567,0.789,0.0,0.382,-5.986,0.115,163.96,0.438,78,207133
 264,Call It What You Want,reputation,2017-11-10,14,1GwMQaZz6Au3QLDbjbMdme,spotify:track:1GwMQaZz6Au3QLDbjbMdme,0.186,0.598,0.504,0.000221,0.34,-9.874,0.0731,163.954,0.252,81,203506
-265,New Year’s Day,reputation,2017-11-10,15,7F5oktn5YOsR9eR5YsFtqb,spotify:track:7F5oktn5YOsR9eR5YsFtqb,0.921,0.661,0.151,0.0,0.13,-12.864,0.0354,94.922,0.23,76,235466
+265,New Year's Day,reputation,2017-11-10,15,7F5oktn5YOsR9eR5YsFtqb,spotify:track:7F5oktn5YOsR9eR5YsFtqb,0.921,0.661,0.151,0.0,0.13,-12.864,0.0354,94.922,0.23,76,235466
 266,All Too Well,reputation Stadium Tour Surprise Song Playlist,2017-11-09,1,00vJzaoxM3Eja1doBUhX0P,spotify:track:00vJzaoxM3Eja1doBUhX0P,0.0448,0.602,0.605,0.000334,0.128,-7.803,0.0244,93.061,0.316,44,329160
 267,Wildest Dreams,reputation Stadium Tour Surprise Song Playlist,2017-11-09,2,22C0JIVhFaczZ4t9heqREN,spotify:track:22C0JIVhFaczZ4t9heqREN,0.0692,0.55,0.688,0.00144,0.106,-7.416,0.0897,139.997,0.465,47,220440
 268,The Best Day,reputation Stadium Tour Surprise Song Playlist,2017-11-09,3,7APTsjmZbj7TFXQJAiRti4,spotify:track:7APTsjmZbj7TFXQJAiRti4,0.639,0.669,0.448,4.06e-06,0.158,-8.566,0.0285,126.068,0.383,38,246306
@@ -274,7 +274,7 @@
 272,Our Song,reputation Stadium Tour Surprise Song Playlist,2017-11-09,7,7qGr3rjRhndRIpFUA5f2HJ,spotify:track:7qGr3rjRhndRIpFUA5f2HJ,0.114,0.545,0.663,0.0,0.321,-5.05,0.0363,178.013,0.565,44,203440
 273,22,reputation Stadium Tour Surprise Song Playlist,2017-11-09,8,2P5gfMtCcKP0CkmgqFMyPg,spotify:track:2P5gfMtCcKP0CkmgqFMyPg,0.00254,0.66,0.733,0.00146,0.0473,-6.564,0.0379,104.009,0.68,43,232120
 274,I Knew You Were Trouble.,reputation Stadium Tour Surprise Song Playlist,2017-11-09,9,2o2IVjuqRkR9hJxtPjtAP0,spotify:track:2o2IVjuqRkR9hJxtPjtAP0,0.00476,0.536,0.464,2.67e-06,0.0357,-6.761,0.0412,77.318,0.665,44,219720
-275,I Don’t Wanna Live Forever (Fifty Shades Darker),reputation Stadium Tour Surprise Song Playlist,2017-11-09,10,55n9yjI6qqXh5F2mYvUc2y,spotify:track:55n9yjI6qqXh5F2mYvUc2y,0.0586,0.731,0.445,1.96e-05,0.14,-8.418,0.0533,117.97,0.106,83,247160
+275,I Don't Wanna Live Forever (Fifty Shades Darker),reputation Stadium Tour Surprise Song Playlist,2017-11-09,10,55n9yjI6qqXh5F2mYvUc2y,spotify:track:55n9yjI6qqXh5F2mYvUc2y,0.0586,0.731,0.445,1.96e-05,0.14,-8.418,0.0533,117.97,0.106,83,247160
 276,Mean,reputation Stadium Tour Surprise Song Playlist,2017-11-09,11,5rcHBt2aNcGFWW0jaAUe1L,spotify:track:5rcHBt2aNcGFWW0jaAUe1L,0.451,0.576,0.754,0.0,0.223,-3.982,0.0428,163.886,0.79,41,238693
 277,How You Get The Girl,reputation Stadium Tour Surprise Song Playlist,2017-11-09,12,3aSYZ4upQ6OSNos26YeVWL,spotify:track:3aSYZ4upQ6OSNos26YeVWL,0.00364,0.765,0.656,0.00868,0.0918,-6.112,0.0504,119.997,0.545,41,247533
 278,So It Goes...,reputation Stadium Tour Surprise Song Playlist,2017-11-09,13,41T04yafZVrjNq2FqvLtId,spotify:track:41T04yafZVrjNq2FqvLtId,0.122,0.574,0.61,1.1e-06,0.13,-7.283,0.0732,74.957,0.374,56,227906

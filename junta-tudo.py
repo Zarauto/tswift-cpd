@@ -6,7 +6,7 @@ import datasci as ds
 import pandas as pd
 import hash
 
-#arq.inicializaFromKaggle()
+arq.inicializaFromKaggle()
 
 df = arq.abreLeitura()
     
@@ -18,7 +18,7 @@ pd.set_option('display.max_columns', None)  # Display all columns
 pd.set_option('display.max_rows', None)     # Display all rows
 pd.set_option('display.width', None)
 
-print(df[df['album']=="Red (Taylor's Version)"])
+print(df)
 #arq.abreHash().print()
 
 #print(df[df['album']=="Midnights"])

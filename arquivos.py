@@ -4,6 +4,11 @@ import pickle
 from os.path import join
 from googleapiclient.discovery import build
 import re
+import sys
+
+def limpaLinha():
+    sys.stdout.write("\033[F")  # Move cursor up one line
+    sys.stdout.write("\033[K")  # Clear the line
 
 # Define endereços de arquivo
 root = join('.','')
@@ -87,6 +92,8 @@ def getLinksTematica(df):
 def inicializaFromKaggle():
     # Cria dataframe reduzido a partir do arquivo fonte
     df = pd.read_csv(src_name)
+    
+    print("Coletando dados das músicas...")
 
     df = df[['id','name','album','release_date','track_number']]
 
@@ -127,10 +134,13 @@ def inicializaFromKaggle():
         
     df = df.drop('release_date', axis=1)
     
+    limpaLinha()
+    print("Dados das músicas coletados!")
+    
 
     salvaFreq([])
     
-    tam_hash = 3967
+    tam_hash = 5381
     h = hash.Hash(tam_hash)
     salvaHash(h)
 
@@ -138,21 +148,25 @@ def inicializaFromKaggle():
     # Atribui ID a cada música
     df['id'] = list(range(1,len(df)+1))
     
-    print("Atribuiu IDs")
-    
+    print("Coletando visualizações no YouTube...")
     getLinksTematica(df)
     getViews(df)
+    limpaLinha()
+    print("Visualizações coletadas!")
     
-    print("Pegou views")
+    print("Coletando letras das músicas...")
     getLyrics(df)
+    limpaLinha()
+    print("Letras das músicas coletadas!")
     
-    print("Pegou letras")
-    
+    print("Processando frequência das palavras nas letras...")
     h = abreHash()
     l = h.to_list()
     l.sort()
     salvaFreq(l)
-    print("Salvou frequências")
+    limpaLinha()
+    print("Frequências das palavras processadas!")
+    print("O programa iniciará em instantes\n")
     
     #salvaFreq(abreHash().to_list().sort())
 
